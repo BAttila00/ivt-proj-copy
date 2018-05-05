@@ -81,6 +81,6 @@ public final class TestUtils {
 						? SimpleValueFactory.getInstance().createIRI("urn:" + RANDOM.nextLong())
 						: SimpleValueFactory.getInstance().createLiteral(""+ RANDOM.nextLong());
 
-		return new SimpleStatement(aSubj, aPred, aObj);
+		return SimpleValueFactory.getInstance().createStatement(aSubj, aPred, aObj);
 	}
 }
